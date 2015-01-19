@@ -44,13 +44,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let now = NSDate()
             let timeSinceLastClosed: Double = now.timeIntervalSinceDate(lastClosed!)
             // Clear the saved bill amount if the app has been inactive for ten minutes.
-            let invalidationInterval: Double = 600.0
-            
+            let invalidationInterval: Double = 5.0
             if timeSinceLastClosed > invalidationInterval {
                 defaults.setObject("0.00", forKey: "currentBillAmount")
                 defaults.synchronize()
                 // Call the viewWillAppear method so the UI refreshes.
-                self.window?.rootViewController?.viewWillAppear(false)
             }
         }
     }

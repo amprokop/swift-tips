@@ -18,7 +18,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // When app enters foreground, we refresh the stored bill amount, in case we've cleared it in AppDelegate
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:"updateBillAmountFromDefaults", name:
+            UIApplicationWillEnterForegroundNotification, object: nil)
+        
         updateBillAmountFromDefaults()
         updateTipPercentageFromDefaults()
         updateThemeFromDefaults()
