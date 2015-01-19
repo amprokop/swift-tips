@@ -1,7 +1,7 @@
 # swift-tips
 A simple Swift tip calculator completed along with the CodePath tutorial.
 
-Time spent: 6 hours spent
+Time spent: 6-7 hours
 
 Completed user stories:
 
@@ -14,8 +14,20 @@ Completed user stories:
  
 Notes:
 
-Also added a "default tip percentage" option to Settings. Refactored the video tutorial code to use `NSNumberFormatter` instead of the `.format` method.
+Also added a "default tip percentage" option to Settings. Refactored the video tutorial code to use `NSNumberFormatter` to format currency.
+# Walkthrough of all user stories:
+### Basic tip calculator
+![Basic Tip Calculator](basic-tip-calculator.gif)
+### Settings view
+![Settings View](settings-view.gif)
+### Saving bill total 
+![Saving Bill Total](save-total.gif)
+### Clearing bill total after interval (shortened to 5 seconds)
+![Clearing Bill Total After Intervial (5 sec)](clear-total.gif)
+### Currency locale option
+![Currency Locale Settings](currency-locale-settings.gif)
+### Light/dark theme option
+![Theme Settings](theme-settings.gif)
 
-Walkthrough of all user stories:
 
 GIFs created with [LiceCap](http://www.cockos.com/licecap/).
